@@ -35,7 +35,7 @@ const createNav = () => {
         return;
       }
       setActiveButton(menuButton);
-      // loadMenu();
+      loadMenu();
     });
   
     const contactButton = document.createElement("button");
