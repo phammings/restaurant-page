@@ -6,11 +6,11 @@ const createContact = () => {
     phoneNumber.textContent = '📞 123 456 789';
   
     const address = document.createElement('p');
-    address.textContent = '🏠 Hollywood Boulevard 42, Los Angeles, USA';
+    address.textContent = '🏠 123 Jane Finch Street, Toronto, Canada';
   
-    const restaurantLocation = document.createElement('img');
-    restaurantLocation.src = 'images/restaurant-location.png';
-    restaurantLocation.alt = 'Mozzafiato restaurant location';
+    // const restaurantLocation = document.createElement('img');
+    // restaurantLocation.src = 'images/restaurant-location.png';
+    // restaurantLocation.alt = 'Pho Cuu Long Restaurant';
   
     contact.appendChild(phoneNumber);
     contact.appendChild(address);
