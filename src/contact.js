@@ -8,9 +8,9 @@ const createContact = () => {
     const address = document.createElement('p');
     address.textContent = '🏠 123 Jane Finch Street, Toronto, Canada';
   
-    // const restaurantLocation = document.createElement('img');
-    // restaurantLocation.src = 'images/restaurant-location.png';
-    // restaurantLocation.alt = 'Pho Cuu Long Restaurant';
+    const restaurantLocation = document.createElement('img');
+    restaurantLocation.src = 'images/restaurant-location.png';
+    restaurantLocation.alt = 'Pho Cuu Long Restaurant';
   
     contact.appendChild(phoneNumber);
     contact.appendChild(address);
