@@ -1,6 +1,7 @@
 import loadHome from "./home";
 import loadMenu from "./menu";
 import loadContact from "./contact";
+import {styleNav, styleHeader, styleButton} from "./style";
 
 const setActiveButton = (button) => {
     const buttons = document.querySelectorAll(".button-nav");
@@ -49,10 +50,7 @@ const createNav = () => {
       loadContact();
     });
   
-    nav.appendChild(homeButton);
-    nav.appendChild(menuButton);
-    nav.appendChild(contactButton);
-  
+    styleNav(nav, homeButton, menuButton, contactButton);
     return nav;
 }
 
@@ -71,6 +69,7 @@ const createHeader = () => {
     header.appendChild(headerDesc);
     header.appendChild(createNav());
 
+    styleHeader(header);
     return header;
 }
 

@@ -11,9 +11,9 @@ const styleNav = (nav, homeBtn, menuBtn, contactBtn) => {
     div1.classList = ("max-w-screen-xl px-4 py-3");
     div2.classList = ("flex items-center");
     ul.classList = ("flex flex-row font-medium mt-0 space-x-8 text-sm mx-auto");
-    homeBtn.classList.add("text-gray-900", "dark:text-white", "hover:underline");
-    menuBtn.classList.add("text-gray-900", "dark:text-white", "hover:underline");
-    contactBtn.classList.add("text-gray-900", "dark:text-white", "hover:underline");
+    homeBtn.classList.add("text-white", "hover:underline");
+    menuBtn.classList.add("text-white",  "hover:underline");
+    contactBtn.classList.add("text-white", "hover:underline");
 
     nav.appendChild(div1);
     div1.appendChild(div2);
