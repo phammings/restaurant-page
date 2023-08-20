@@ -43,4 +43,12 @@ const styleContact = (contact, phoneNumber, address, restaurantLocation) => {
     contact.classList.add("grid", "grid-rows-3", "h-80", "m-20", "text-lg");
 }
 
-export {styleNav, styleHeader, styleHome, styleContact};
+const styleMenu = (menu) => {
+    menu.classList.add("grid", "grid-cols-2");
+}
+
+const styleMenuItem = (menuItem) => {
+    menuItem.classList.add("h-40", "w-40", "mx-auto", "mt-16");
+}
+
+export {styleNav, styleHeader, styleHome, styleContact, styleMenu, styleMenuItem};

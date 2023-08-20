@@ -1,3 +1,5 @@
+import {styleMenu, styleMenuItem} from "./style";
+
 const createMenuItem = (name, description) => {
     const menuItem = document.createElement("div");
     menuItem.classList.add("menu-item");
@@ -8,14 +10,15 @@ const createMenuItem = (name, description) => {
     const foodDescription = document.createElement("p");
     foodDescription.textContent = description;
   
-    // const foodImage = document.createElement("img");
-    // foodImage.src = `images/pizzas/${name.toLowerCase()}.png`;
-    // foodImage.alt = `${name}`;
+    const foodImage = document.createElement("img");
+    foodImage.src = `/images/${name.toLowerCase()}.png`;
+    foodImage.alt = `${name}`;
   
-    // menuItem.appendChild(foodImage);
+    menuItem.appendChild(foodImage);
     menuItem.appendChild(foodName);
     menuItem.appendChild(foodDescription);
   
+    styleMenuItem(foodImage);
     return menuItem;
 }
 
@@ -30,6 +33,7 @@ const createMenu = () => {
     menu.appendChild(createMenuItem("Com Tam Dac Biet", "Broken rice w/ Grilled Beef, Chicken, and Pork"));
     menu.appendChild(createMenuItem("Xoi Ga", "Fried Chicken Wings w/ Sticky Rice"));
 
+    styleMenu(menu);
     return menu;
 }
 
