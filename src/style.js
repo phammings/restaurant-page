@@ -1,5 +1,5 @@
 const styleNav = (nav, homeBtn, menuBtn, contactBtn) => {
-    nav.classList = ("bg-gray-50 dark:bg-gray-700");
+    nav.classList = ("bg-slate-700");
 
     const div1 = document.createElement("div");
     const div2 = document.createElement("div");
@@ -8,9 +8,9 @@ const styleNav = (nav, homeBtn, menuBtn, contactBtn) => {
     const li2 = document.createElement("li");
     const li3 = document.createElement("li");
 
-    div1.classList = ("max-w-screen-xl px-4 py-3 mx-auto");
+    div1.classList = ("max-w-screen-xl px-4 py-3");
     div2.classList = ("flex items-center");
-    ul.classList = ("flex flex-row font-medium mt-0 mr-6 space-x-8 text-sm");
+    ul.classList = ("flex flex-row font-medium mt-0 space-x-8 text-sm mx-auto");
     homeBtn.classList.add("text-gray-900", "dark:text-white", "hover:underline");
     menuBtn.classList.add("text-gray-900", "dark:text-white", "hover:underline");
     contactBtn.classList.add("text-gray-900", "dark:text-white", "hover:underline");
@@ -28,8 +28,19 @@ const styleNav = (nav, homeBtn, menuBtn, contactBtn) => {
     li3.appendChild(contactBtn);
 }
 
-const styleNavButton = (button) => {
-
+const styleHeader = (header) => {
+    header.classList.add("grid", "grid-rows-3", "mt-4");
 }
 
-export default styleNav;
+const styleHome = (home, headline, chefImage, restaurantDesc1, restaurantDesc2) => {
+    headline.classList.add("m-16");
+    chefImage.classList.add("mx-auto");
+    restaurantDesc1.classList.add("m-12");
+    restaurantDesc2.classList.add("m-12");
+}
+
+const styleContact = (contact, phoneNumber, address, restaurantLocation) => {
+    contact.classList.add("grid", "grid-rows-3", "h-80", "m-20", "text-lg");
+}
+
+export {styleNav, styleHeader, styleHome, styleContact};

@@ -1,3 +1,5 @@
+import {styleContact} from "./style";
+
 const createContact = () => {
     const contact = document.createElement('div');
     contact.classList.add('contact');
@@ -16,6 +18,7 @@ const createContact = () => {
     contact.appendChild(address);
     contact.appendChild(restaurantLocation);
   
+    styleContact(contact, phoneNumber, address, restaurantLocation);
     return contact;
   }
   
