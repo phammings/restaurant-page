@@ -69,7 +69,7 @@ const createHeader = () => {
     header.appendChild(headerDesc);
     header.appendChild(createNav());
 
-    styleHeader(header);
+    styleHeader(header, restaurantName);
     return header;
 }
 

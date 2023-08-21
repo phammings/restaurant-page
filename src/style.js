@@ -28,8 +28,9 @@ const styleNav = (nav, homeBtn, menuBtn, contactBtn) => {
     li3.appendChild(contactBtn);
 }
 
-const styleHeader = (header) => {
+const styleHeader = (header, restaurantName) => {
     header.classList.add("grid", "grid-rows-3", "mt-4");
+    restaurantName.classList.add("text-lg");
 }
 
 const styleHome = (home, headline, chefImage, restaurantDesc1, restaurantDesc2) => {
