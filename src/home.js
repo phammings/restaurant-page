@@ -11,7 +11,7 @@ const createHome = () => {
     const chefImage = document.createElement("img");
     const chefFig = document.createElement("figure");
     const imageCaption = document.createElement("figcaption");
-    chefImage.src = "/images/Chef.jpeg";
+    chefImage.src = "/restaurant-page/images/Chef.jpeg";
     chefImage.alt = "Vietnamese Chef";
     imageCaption.innerText = "Our Very Own Chef Kevin Nguyen";
 
