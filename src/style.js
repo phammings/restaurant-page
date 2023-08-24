@@ -8,7 +8,7 @@ const styleNav = (nav, homeBtn, menuBtn, contactBtn) => {
     const li2 = document.createElement("li");
     const li3 = document.createElement("li");
 
-    div1.classList = ("max-w-screen-xl px-4 py-3");
+    div1.classList = ("px-4 py-3");
     div2.classList = ("flex items-center");
     ul.classList = ("flex flex-row font-medium mt-0 space-x-8 text-sm mx-auto");
     homeBtn.classList.add("text-white", "hover:underline");
